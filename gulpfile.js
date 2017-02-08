@@ -20,7 +20,7 @@ gulp.task("sass", function () {
             suffix: ".min"
         }))
         .pipe(sourceMaps.write("."))
-        .pipe(gulp.dest("./css"))
+        .pipe(gulp.dest("./compiled"))
 });
 
 gulp.task("watch", function () {
