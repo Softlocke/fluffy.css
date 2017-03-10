@@ -12,7 +12,7 @@ var cmq = require('gulp-merge-media-queries');
 var cleanCss = require('gulp-clean-css');
 var concat = require('gulp-concat');
 gulp.task('sass',function(){
-    gulp.src(['sass//**/*.sass'])
+    gulp.src(['./sass/**/*.scss'])
         .pipe(plumber({
             handleError: function (err) {
                 console.log(err);
@@ -25,7 +25,7 @@ gulp.task('sass',function(){
         .pipe(cssComb())
         .pipe(cmq({log:true}))
         .pipe(csslint())
-        .pipe(csslint.reporter())
+        //.pipe(csslint().reporter())
         .pipe(concat('compiled.css'))
         .pipe(gulp.dest('css/compiled'))
         .pipe(rename({
