@@ -1,4 +1,9 @@
 
 nav {
   margin: 0;
+  padding: $default-padding;
+  background-color: $accent-color;
+  ul{
+    list-style: none;
+  }
 }

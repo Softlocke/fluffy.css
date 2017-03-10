@@ -21,6 +21,7 @@
     "gulp-concat": "*"
   },
   "dependencies": {
+    "normalize-scss": "^6.0.0",
     "normalize.css": "^5.0.0"
   }
 }

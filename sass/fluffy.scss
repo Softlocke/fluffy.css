@@ -1,8 +1,11 @@
 //do the thing
-//@import "node_modules/normalize.css";
+@import "normalize";
 
 //import all the required variables
 @import "vars";
+
+//get the fun mixins
+@import "mixins";
 
 //import all of fluffy's custom components
 @import "components";
