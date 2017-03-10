@@ -5,7 +5,29 @@
   border-radius: $radius;
 }
 
+@mixin padding-tl($padding){
+  padding-top: $padding;
+  padding-left: $padding;
+}
+
+@mixin padding-tb($padding){
+  padding-top: $padding;
+  padding-bottom: $padding;
+}
+
+@mixin padding-tr($padding){
+  padding-top: $padding;
+  padding-left: $padding;
+}
+
+@mixin padding-tlr($padding){
+  padding-top: $padding;
+  padding-left: $padding;
+  padding-right: $padding;
+}
+
 @mixin padding-lr($padding){
   padding-left: $padding;
   padding-right: $padding;
 }
+
