@@ -1,0 +1,26 @@
+
+nav {
+  @include padding-lr($default-padding);
+  background-color: $accent-color;
+  ul{
+    margin: 0;
+    list-style: none;
+
+    li {
+      display: inline-block;
+      @include padding-lr($large-padding);
+      cursor: pointer;
+      color: $text-color-bg-dark;
+      line-height: $navbar-height;
+      &:hover {
+        background-color: $highlight-color;
+      }
+      //decor is overrated
+      a{
+        text-decoration: none;
+        color: $text-color-bg-dark
+      }
+
+    }
+  }
+}
